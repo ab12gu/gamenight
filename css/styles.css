@@ -13,7 +13,11 @@
 
 /* Body padding */
 body {
+  font-family: 'Inter', sans-serif;
   padding: 1rem 2rem;
+  background-color: #F7FFA1;
+  color: #333;
+  min-height: 100vh; /* Ensures full screen height */
 }
 
 .container {
@@ -39,8 +43,17 @@ h1, h2, h3, h4 {
   margin-bottom: 2rem;
 }
 
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
 
 .header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
     /*   margin: [top] [right] [bottom] [left]; */
     /* margin: 20px 20px 20px 20px; */
     /*padding: 1rem 2rem; /* typical padding */

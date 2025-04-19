@@ -20,6 +20,32 @@ body {
   min-height: 100vh; /* Ensures full screen height */
 }
 
+/* Default styles for larger screens */
+.map-container {
+  width: 100%; /* Ensure the map takes full width by default */
+}
+
+.instagram-media {
+  width: 100%;
+  max-width: 100%;
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .map-container {
+    width: 100%; /* Adjust width for mobile */
+    height: width;
+    max-width: 100%; /* Make sure it doesn't overflow */
+    overflow-x: hidden; /* Hide any horizontal overflow */
+  }
+  .instagram-media {
+    width: 100%;
+  }
+
+}
+
+
+
+
 a {
   color: teal;
 }

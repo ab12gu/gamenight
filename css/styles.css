@@ -23,6 +23,7 @@ body {
 /* Default styles for larger screens */
 .map-container {
   width: 100%; /* Ensure the map takes full width by default */
+  text-align: center;
 }
 
 .instagram-media {

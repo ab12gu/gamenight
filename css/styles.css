@@ -30,35 +30,6 @@ body {
   width: 100%;
   max-width: 100%;
 }
-/* Media query for mobile devices */
-@media only screen and (max-width: 768px) {
-  .map-container {
-    width: 100%; /* Adjust width for mobile */
-    height: width;
-    max-width: 100%; /* Make sure it doesn't overflow */
-    overflow-x: hidden; /* Hide any horizontal overflow */
-  }
-  .instagram-media {
-    width: 100%;
-    height: width;
-    max-width: 100%; /* Make sure it doesn't overflow */
-    overflow-x: hidden; /* Hide any horizontal overflow */
-  }
-  .header{
-    position: flex !important;
-  }
-  .header h4 {
-    display: none !important;
-  }
-  h3 {
-    display: block !important; /* Show the text on mobile */
-  }  
-  .content {
-    margin-top: 8rem !important; /* Reduced from 8rem to 6rem */
-  }
-}
-
-
 /* hyperlinks */
 a {
   color: teal;
@@ -143,3 +114,34 @@ h3 {
   padding-top: 200px;
   margin-top: 200px;
 }
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .map-container {
+    width: 100%; /* Adjust width for mobile */
+    height: width;
+    max-width: 100%; /* Make sure it doesn't overflow */
+    overflow-x: hidden; /* Hide any horizontal overflow */
+  }
+  .instagram-media {
+    width: 100%;
+    height: width;
+    max-width: 100%; /* Make sure it doesn't overflow */
+    overflow-x: hidden; /* Hide any horizontal overflow */
+  }
+  .header {
+    position: relative;
+  }
+  .header h4 {
+    display: none !important;
+  }
+  h3 {
+    margin-top: -8rem;
+    display: block !important; /* Show the text on mobile */
+  }  
+  .content {
+    margin-top: 8rem !important; /* Reduced from 8rem to 6rem */
+  }
+}
+
+

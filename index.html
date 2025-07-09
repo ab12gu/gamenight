@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gamenight</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="images/triangle.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
@@ -18,20 +20,30 @@
 
 <body class="container">
    
-    <div class="header">
-        <img src="images/robin-blue.png" alt="Logo" class="logo" />
-        <h1> Gamenight  </h1>
-        <br>
-        <h4> Hosted by Abhay Gupta </h4> 
-    </div>
+    <div id="header"></div>
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
 
-  
+    <h3> Hosted by Abhay Gupta </h3> 
+
+    <div id="navbar"></div>
+    <script>
+        fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+    </script> 
 
     <div class="content">
 
-        <h3> Hosted by Abhay Gupta </h3> 
 
-        <h2> Uhm… ”welcome?” </h2>
+        <h2> Uhm… "welcome?" </h2>
 
         <p>
             Bring your own board games night. Feel free to just socialize if you aren't a heavy gamer. I really don't care much for board games personally.
@@ -111,7 +123,7 @@
 
         <ul>
         
-            <li><b>Feel free to bring any snacks or drinks you’d like to share</b></li>
+            <li><b>Feel free to bring any snacks or drinks you'd like to share</b></li>
             <li>Can I out someone rn? Anyways, I originally had it as vegan but <b>Alex was being a baby </b>and said you cant call a bbq vegan... and then pulled down my pants and gave me a weggie</li>
             <li>So, guess we will have <b>1 meat grill & 1 vegan grill</b></li>
             <li>FILL OUT FOOD <a href="https://docs.google.com/spreadsheets/d/10DqRC_vLWpVV7zXWe9Fpa7sal5FumWeaPXRLEEFpPaM/edit?usp=sharing">FORM</a> </li>

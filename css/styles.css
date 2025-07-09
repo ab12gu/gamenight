@@ -65,7 +65,6 @@ li::marker {
   color: #1A5270;
 }
 
-
 .container {
   margin: 0 auto;  /* Centers the container horizontally */
   max-width: 750px;  /* Restricts the width */
@@ -93,41 +92,9 @@ h3 {
   margin-top: -2rem;
 }
 
-
-
-.logo {
-  margin-left:-1rem;
-  padding-top: 1rem;
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-}
-
-.header {
-  position: fixed;
-  padding: 0rem 2rem; /* Add padding for spacing */
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 23rem;
-  margin-left: -1rem;
-  margin-top: -1rem;
-  background-color: #C7E3FF; /* Set a background color */
-}
-
-/* Ensure the "Hosted by Abhay Gupta" text stays on the right side of the page */
-.header h4 {
-  margin-left: auto; /* Push the text to the right */
-  text-align: right; /* Align the text to the right */
-  position: absolute; /* Position it absolutely */
-  right: 2rem; /* Add spacing from the right edge */
-}
-
 /* Section margins */
 .content {
-  margin-top: 10rem; /* Reduced from 8rem to 6rem */
+  margin-top: 16rem; /* Increased to account for fixed header and navbar */
   margin-bottom: 2rem;
 }
 
@@ -152,24 +119,11 @@ h3 {
     max-width: 100%; /* Make sure it doesn't overflow */
     overflow-x: hidden; /* Hide any horizontal overflow */
   }
-  .header {
-    position: relative;
-    gap: 10px;
-  }
-  .logo{
-    padding-left: -4rem;
-    margin-left: -1rem;
-  }
-  .header h4 {
-    display: none !important;
-  }
   h3 {
-    margin-top: -8rem;
+    margin: 0rem 0rem 2rem 0rem;
     display: block !important; /* Show the text on mobile */
   }  
   .content {
-    margin-top: 8rem !important; /* Reduced from 8rem to 6rem */
+    margin-top: 2rem !important; /* Reduced from 8rem to 6rem */
   }
 }
-
-

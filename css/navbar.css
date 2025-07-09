@@ -1,0 +1,73 @@
+/* Navigation bar styles - updated to match website theme */
+
+.navbar {
+  margin: 10.9rem auto 0rem auto;
+  padding: 0;
+  background-color: #C7E3FF;
+  border-top: 2px solid #1A5270;
+  border-bottom: 2px solid #1A5270;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 750px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar a {
+  color: #1A5270;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  position: relative;
+}
+
+.navbar a:hover {
+  background-color: rgba(26, 82, 112, 0.1);
+  color: #947BB1;
+  border-bottom: 3px solid #947BB1;
+}
+
+.navbar a.active {
+  background-color: rgba(26, 82, 112, 0.15);
+  color: #1A5270;
+  border-bottom: 3px solid #1A5270;
+  font-weight: 600;
+}
+
+/* Mobile responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    position: relative;
+    gap: 0;
+    width: 100%;
+    margin: -1rem 0 0 0;
+    left: 0;
+    transform: none;
+  }
+  
+  .navbar a {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    flex: 1 1 50%;
+    min-width: 0;
+    border-bottom: 1px solid #1A5270;
+    border-right: 1px solid #1A5270;
+  }
+  
+  .navbar a:nth-child(even) {
+    border-right: none;
+  }
+  
+  .navbar a:last-child {
+    border-right: none;
+  }
+} 

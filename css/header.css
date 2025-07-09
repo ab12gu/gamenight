@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+    padding: 1rem 23rem 2rem 2rem; /* top-right-bottom-left */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    background-color: #C7E3FF; /* Set a background color */
+  }
+  
+  /* Ensure the "Hosted by Abhay Gupta" text stays on the right side of the page */
+  .header h4 {
+    margin-left: auto; /* Push the text to the right */
+    text-align: right; /* Align the text to the right */
+    position: absolute; /* Position it absolutely */
+    right: 2rem; /* Add spacing from the right edge */
+  }
+
+
+.logo {
+    margin-left:-1rem;
+    padding-top: 1rem;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  
+
+  @media only screen and (max-width: 768px) {
+    .header {
+        margin-top: -0rem;
+        position: relative;
+        gap: 10px;
+      }
+    .header h4 {
+        display: none !important;
+      }
+    .logo{
+        padding-left: -4rem;
+        margin-left: -1rem;
+      }
+}

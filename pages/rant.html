@@ -30,6 +30,7 @@
         .then(res => res.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
+            document.getElementById('rant').classList.add('active');
         });
     </script> 
 

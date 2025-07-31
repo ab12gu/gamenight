@@ -66,9 +66,60 @@
         </ul>
 
         <p>
-            <div class="image">
-                <img src="./images/locations/john-night.jpeg" alt="Rooftop BBQ Image" width="600" />
+            <div style="display: flex; justify-content: center; margin: 20px 0;">
+                <div id="photo-gallery-2" style="position: relative; max-width: 600px; margin: 0 auto;">
+                    <img id="gallery-image-2" src="./images/locations/rose/rose1.jpeg" alt="Location Photo" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    
+                    <button id="prev-btn-2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">‹</button>
+                    <button id="next-btn-2" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">›</button>
+                    
+                    <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #666;">
+                        <span id="photo-counter-2">1 of 2</span>
+                    
+                    </div>
+                </div>
             </div>
+    
+            <script>
+                const photos2 = [
+                    './images/locations/rose/rose1.jpeg',
+                    './images/locations/rose/rose3.jpeg',
+                ];
+                
+                let currentPhotoIndex2 = 0;
+                const galleryImage2 = document.getElementById('gallery-image-2');
+                const prevBtn2 = document.getElementById('prev-btn-2');
+                const nextBtn2 = document.getElementById('next-btn-2');
+                const photoCounter2 = document.getElementById('photo-counter-2');
+                
+                function updatePhoto2() {
+                    galleryImage2.src = photos2[currentPhotoIndex2];
+                    photoCounter2.textContent = `${currentPhotoIndex2 + 1} of ${photos2.length}`;
+                }
+                
+                function nextPhoto2() {
+                    currentPhotoIndex2 = (currentPhotoIndex2 + 1) % photos2.length;
+                    updatePhoto2();
+                }
+                
+                function prevPhoto2() {
+                    currentPhotoIndex2 = (currentPhotoIndex2 - 1 + photos2.length) % photos2.length;
+                    updatePhoto2();
+                }
+                
+                prevBtn2.addEventListener('click', prevPhoto2);
+                nextBtn2.addEventListener('click', nextPhoto2);
+                
+                // Keyboard navigation for second gallery
+                document.addEventListener('keydown', function(e) {
+                    // Only handle if second gallery is focused (you can add focus detection if needed)
+                    if (e.key === 'ArrowLeft') {
+                        prevPhoto2();
+                    } else if (e.key === 'ArrowRight') {
+                        nextPhoto2();
+                    }
+                });
+            </script>
         </p>
  
         <h2> Feedback </h2>
@@ -86,6 +137,10 @@
 
         <h2>Media</h2>
         <br>
+
+
+
+
 
         <div style="display: flex; justify-content: center; margin: 20px 0;">
             <video width="600" height="400" autoplay muted loop controls>
@@ -153,61 +208,6 @@
             });
         </script>
 
-        <div style="display: flex; justify-content: center; margin: 20px 0;">
-            <div id="photo-gallery-2" style="position: relative; max-width: 600px; margin: 0 auto;">
-                <img id="gallery-image-2" src="./images/locations/john-night.jpeg" alt="Location Photo" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                
-                <button id="prev-btn-2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">‹</button>
-                <button id="next-btn-2" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">›</button>
-                
-                <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #666;">
-                    <span id="photo-counter-2">1 of 4</span>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            const photos2 = [
-                './images/locations/john-night.jpeg',
-                './images/locations/john-img1.jpg',
-                './images/locations/john-img2.jpg',
-                './images/locations/john-bbq.jpg'
-            ];
-            
-            let currentPhotoIndex2 = 0;
-            const galleryImage2 = document.getElementById('gallery-image-2');
-            const prevBtn2 = document.getElementById('prev-btn-2');
-            const nextBtn2 = document.getElementById('next-btn-2');
-            const photoCounter2 = document.getElementById('photo-counter-2');
-            
-            function updatePhoto2() {
-                galleryImage2.src = photos2[currentPhotoIndex2];
-                photoCounter2.textContent = `${currentPhotoIndex2 + 1} of ${photos2.length}`;
-            }
-            
-            function nextPhoto2() {
-                currentPhotoIndex2 = (currentPhotoIndex2 + 1) % photos2.length;
-                updatePhoto2();
-            }
-            
-            function prevPhoto2() {
-                currentPhotoIndex2 = (currentPhotoIndex2 - 1 + photos2.length) % photos2.length;
-                updatePhoto2();
-            }
-            
-            prevBtn2.addEventListener('click', prevPhoto2);
-            nextBtn2.addEventListener('click', nextPhoto2);
-            
-            // Keyboard navigation for second gallery
-            document.addEventListener('keydown', function(e) {
-                // Only handle if second gallery is focused (you can add focus detection if needed)
-                if (e.key === 'ArrowLeft') {
-                    prevPhoto2();
-                } else if (e.key === 'ArrowRight') {
-                    nextPhoto2();
-                }
-            });
-        </script>
 
         <h2>
             Miscellanous Hyperlinks

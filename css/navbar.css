@@ -3,7 +3,7 @@
 .navbar {
   margin: 10.9rem auto 0rem auto;
   padding: 0;
-  background-color: #C7E3FF;
+  background-color: #cfedff;
   border-top: 2px solid #1A5270;
   border-bottom: 2px solid #1A5270;
   display: flex;
@@ -30,13 +30,13 @@
 }
 
 .navbar a:hover {
-  background-color: rgba(26, 82, 112, 0.1);
-  color: #947BB1;
-  border-bottom: 3px solid #947BB1;
+  background-color: #1A52701A;
+  color: #6f528f;
+  border-bottom: 3px solid #6f528f;
 }
 
 .navbar a.active {
-  background-color: rgba(26, 82, 112, 0.15);
+  background-color: #1A52701A;
   color: #1A5270;
   border-bottom: 3px solid #1A5270;
   font-weight: 600;

@@ -25,8 +25,8 @@ html, body {
 body {
   font-family: 'Inter', sans-serif;
   padding: 1rem 2rem;
-  background-color: #cfedff;
-  color: #796297;
+  background-color: #bcdeff;
+  color: #71548a;
   min-height: 100vh; /* Ensures full screen height */
   overflow-x: hidden; /* Disable horizontal scrolling */
 }
@@ -54,7 +54,7 @@ body {
 }
 /* hyperlinks */
 a {
-  color: #000ebb /*#266c2d;*/
+  color: #096b6c /*#106d50 /*#000ebb /*#266c2d;*/
 }
 
 b {

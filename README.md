@@ -5,6 +5,26 @@ homepage for people to checkout gamenight
 
 [CSS Styleguide](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/CSS)
 
+
+## Run Webpage Locally
+
+```
+$ python3 -m http.server 2000
+```
+
+\*generally I use port 8000 for my blog site
+
+Render readme in terminal
+
+```
+$ glow README.md
+```
+
+## Framework
+
+- Currently: `Vanilla HTML/CSS/JS`
+- To Add: `Svelte`
+
 ## Colors
 
 - Hyperlinks: #096b6c

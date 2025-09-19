@@ -52,6 +52,29 @@ body {
   width: 100%;
   max-width: 100%;
 }
+
+/* Video container styling */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 1rem 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.instagram-container {
+  margin: 1rem 0;
+  text-align: center;
+}
 /* hyperlinks */
 a {
   color: #096b6c /*#106d50 /*#000ebb /*#266c2d;*/

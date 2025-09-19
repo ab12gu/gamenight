@@ -71,9 +71,29 @@ body {
   border-radius: 8px;
 }
 
+/* Instagram side-by-side layout */
 .instagram-container {
-  margin: 1rem 0;
+  flex: 1;
+  margin: 0 0.5rem;
   text-align: center;
+}
+
+.instagram-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Mobile responsive - stack vertically on small screens */
+@media only screen and (max-width: 768px) {
+  .instagram-row {
+    flex-direction: column;
+  }
+  
+  .instagram-container {
+    margin: 0.5rem 0;
+  }
 }
 /* hyperlinks */
 a {

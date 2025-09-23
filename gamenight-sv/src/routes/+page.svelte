@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>Gamenight</title>
+  <meta name="description" content="Social events hosted in Seattle" />
+</svelte:head>
+
 <h2> Uhm… "welcome?" </h2>
 
 <p>

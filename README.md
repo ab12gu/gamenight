@@ -37,6 +37,7 @@ Install `Sveltekit` (only if creating a new sveltekit app)
 
 ```
 $ npx sv create my-app
+$ npx sv add tailwindcss # add tailwindcss
 ```
 
 Install node version manager (`nvm`) to select right version
@@ -62,7 +63,7 @@ Start local server
 Static site generation plugin
 ```
 $ npm i -D @sveltejs/adapter-static # install
-$ npm run build # build static site
+$ npm run build # build static site (or normal site depends on what u defined in config)
 $ npm install -g serve # run locally in root
 $ serve build
 ```

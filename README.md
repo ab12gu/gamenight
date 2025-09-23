@@ -6,24 +6,61 @@ homepage for people to checkout gamenight
 [CSS Styleguide](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/CSS)
 
 
+## Framework
+
+- Currently: `Vanilla HTML/CSS/JS`
+- To Add: `Svelte`
+    - [https://svelte.dev/docs/kit/creating-a-project](https://svelte.dev/docs/kit/creating-a-project)
+
 ## Run Webpage Locally
+
+You only need to have python3 installed. Can be installed via website or homebrew.
+- NOTE: I generally use `port 8000` for my blog site
 
 ```
 $ python3 -m http.server 2000
 ```
 
-\*generally I use port 8000 for my blog site
-
-Render readme in terminal
+Render `readme` in terminal
 
 ```
 $ glow README.md
 ```
 
-## Framework
+## Run Webpage locally via Sveltekit
 
-- Currently: `Vanilla HTML/CSS/JS`
-- To Add: `Svelte`
+Currently porting website to `svelete/sveltekit` in order to have a backend. Allows both storage of data and rendering in realtime from server rather than client-side static sites. Also allows for better code reuse.
+
+Install `Sveltekit` (only if creating a new sveltekit app)
+- You can rename `my-app` to your app name
+
+```
+$ npx sv create my-app
+```
+
+Install node version manager (`nvm`) to select right version
+
+```
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Restart terminal && change node version to 22
+
+```
+$ npx install 22
+$ npx use 22
+$ npm install # install dependencies
+```
+
+Start local server
+
+```
+# npm run dev
+```
+
+Recommended to use `Svelte for VS Code` but there is a vim library too
+
+NOTE: Unlike python, node version manager has its own environment when running env, with dependencies stored in `package.json` file and stores them in `node_modules\.
 
 ## Colors
 

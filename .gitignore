@@ -1,1 +1,33 @@
+# Node modules
+node_modules/
+
+# Lock files (optional to ignore, but usually keep them)
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
 .DS_Store
+
+# Vite / build outputs
+/gamenight-sv/.svelte-kit/
+/gamenight-sv/dist/
+/gamenight-sv/build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Optional editor files
+.vscode/
+.idea/
+
+
+
+

@@ -11,6 +11,7 @@ homepage for people to checkout gamenight
 - Currently: `Vanilla HTML/CSS/JS`
 - To Add: `Svelte`
     - [https://svelte.dev/docs/kit/creating-a-project](https://svelte.dev/docs/kit/creating-a-project)
+    - Editor plugins: [https://www.sveltesociety.dev/resources#editor-support](https://www.sveltesociety.dev/resources#editor-support)
 
 ## Run Webpage Locally
 
@@ -56,6 +57,14 @@ Start local server
 
 ```
 # npm run dev
+```
+
+Static site generation plugin
+```
+$ npm i -D @sveltejs/adapter-static # install
+$ npm run build # build static site
+$ npm install -g serve # run locally in root
+$ serve build
 ```
 
 Recommended to use `Svelte for VS Code` but there is a vim library too

@@ -28,6 +28,18 @@ Render `readme` in terminal
 $ glow README.md
 ```
 
+## Start local server
+
+```
+$ npm run dev # development server
+```
+
+## Compile static site
+```
+$ npm run build # build static site (or normal site depends on what u defined in config)
+$ serve build # static-site rendering server, run in root
+```
+
 ## Run Webpage locally via Sveltekit
 
 Currently porting website to `svelete/sveltekit` in order to have a backend. Allows both storage of data and rendering in realtime from server rather than client-side static sites. Also allows for better code reuse.
@@ -37,7 +49,6 @@ Install `Sveltekit` (only if creating a new sveltekit app)
 
 ```
 $ npx sv create my-app
-$ npx sv add tailwindcss # add tailwindcss
 ```
 
 Install node version manager (`nvm`) to select right version
@@ -54,23 +65,25 @@ $ npx use 22
 $ npm install # install dependencies
 ```
 
-Start local server
-
-```
-# npm run dev
-```
-
 Static site generation plugin
 ```
 $ npm i -D @sveltejs/adapter-static # install
 $ npm run build # build static site (or normal site depends on what u defined in config)
 $ npm install -g serve # run locally in root
-$ serve build
 ```
 
 Recommended to use `Svelte for VS Code` but there is a vim library too
 
-NOTE: Unlike python, node version manager has its own environment when running env, with dependencies stored in `package.json` file and stores them in `node_modules\.
+NOTE: Unlike python, node version manager has its own environment when running env, with dependencies stored in `package.json` file and stores them in `node_modules`.
+
+### CSS Plugin Installation Options
+
+I started with tailwindcss, but watched a few things and decided to use unocss instead. I like how it doesn't have pre-existing styles, so its faster. And allows me to define the styles to use inline like tailwind. For a singular website, you use the same styles consistently, so why not defined them yourself ?!?
+```
+$ npx sv add tailwindcss # add tailwindcss
+$ npx sv add unocss # add unocss
+$ npm install -D unocss # alt add unocss
+```
 
 ## Colors
 

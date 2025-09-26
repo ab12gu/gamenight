@@ -12,6 +12,7 @@ homepage for people to checkout gamenight
 - To Add: `Svelte`
     - [https://svelte.dev/docs/kit/creating-a-project](https://svelte.dev/docs/kit/creating-a-project)
     - Editor plugins: [https://www.sveltesociety.dev/resources#editor-support](https://www.sveltesociety.dev/resources#editor-support)
+    - [Tailwind for Sveltekit](https://tailwindcss.com/docs/installation/framework-guides/sveltekit)
 
 ## Run Webpage Locally
 

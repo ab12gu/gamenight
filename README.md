@@ -13,6 +13,7 @@ homepage for people to checkout gamenight
     - [https://svelte.dev/docs/kit/creating-a-project](https://svelte.dev/docs/kit/creating-a-project)
     - Editor plugins: [https://www.sveltesociety.dev/resources#editor-support](https://www.sveltesociety.dev/resources#editor-support)
     - [Tailwind for Sveltekit](https://tailwindcss.com/docs/installation/framework-guides/sveltekit)
+    - UnoCSS
 
 ## Run Webpage Locally
 
@@ -45,11 +46,13 @@ $ serve build # static-site rendering server, run in root
 
 Currently porting website to `svelete/sveltekit` in order to have a backend. Allows both storage of data and rendering in realtime from server rather than client-side static sites. Also allows for better code reuse.
 
-Install `Sveltekit` (only if creating a new sveltekit app)
+Install `Sveltekit` & CSS framework (only if creating a new sveltekit app)
 - You can rename `my-app` to your app name
 
 ```
 $ npx sv create my-app
+$ npm install -D unocss
+$ npx add tailwindcss # NOT USED
 ```
 
 Install node version manager (`nvm`) to select right version

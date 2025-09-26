@@ -7,5 +7,9 @@ export default defineConfig({
   },
   rules: [
     ['text-color', { color: '#71548a' }],
+    ['hyperlinks', { color: '#096b6c' }],
+    ['bolds', { color: '#1A5270' }],
+    ['background', { color: '#bcdeff' }],
+    ['text', { color: '#71548a' }],
   ],
 })

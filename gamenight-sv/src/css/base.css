@@ -2,51 +2,13 @@
 /* Resets browser defaults (margins, paddings, font sizes) so styles are consistent across browsers. */
 /* NOTE: later css overrides earlier css */
 
+/* Adds global styles and resets (Tailwind calls this Preflight). */
+/* Resets browser defaults (margins, paddings, font sizes) so styles are consistent across browsers. */
+/* NOTE: later css overrides earlier css */
 
-body {
-  @apply bg-gray-50 text-gray-900 font-sans;
+b, strong {
+    font-weight: bold;
+    color: #1A5270;
 }
 
 
-/* Reset headings and paragraphs to desired defaults */
-@layer base {
-    h1 { @apply text-5xl font-bold; }
-    h2 { @apply text-4xl font-semibold; }
-    h3 { @apply text-3xl font-semibold; }
-    h4 { @apply text-2xl font-semibold; }
-    h5 { @apply text-xl font-semibold; }
-    h6 { @apply text-lg font-semibold; }
-    p  { @apply text-base leading-7; }
-
-    html, body {
-    width: 100%; /* Ensure the bvdy and html elements do not exceed the viewport width */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-
-    /* Headings */
-    h1, h2, h3, h4 {
-    color: #1A5270;
-    }
-
-    /* Body */
-    body {
-        @apply font-sans;  /* Sets a sans-serif font */
-        max-width: 750px;  /* Restricts the width */
-        margin: 0 auto;  /* Centers the container horizontally */
-        background-color: #bcdeff;
-        color: #71548a;
-        min-height: 100vh; /* Ensures full screen height */
-        overflow-x: hidden; /* Disable horizontal scrolling */
-    }
-
-    /* hyperlinks */
-    a {
-    color: #096b6c /*#106d50 /*#000ebb /*#266c2d;*/
-    }
-
-    /* bold text */
-    b {
-    color: #1A5270;
-    }
-
-}

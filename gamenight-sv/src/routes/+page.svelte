@@ -3,7 +3,7 @@
   <meta name="description" content="Social events hosted in Seattle" />
 </svelte:head>
 
-<h2 class="text-color"> Uhm… "welcome?" </h2>
+<h2> Uhm… "welcome?" </h2>
 
 <p>
     Bring your own board games night. Feel free to just socialize if you aren't a heavy gamer. I really don't care much for board games personally.

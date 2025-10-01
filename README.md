@@ -1,6 +1,15 @@
 # gamenight
+
 homepage for people to checkout gamenight
 
+## Run Webpage Locally
+
+You only need to have python3 installed. Can be installed via website or homebrew.
+- NOTE: I generally use `port 8000` for my blog site
+
+```
+$ python3 -m http.server 2000
+```
 ## Styleguides
 
 [CSS Styleguide](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/CSS)
@@ -15,16 +24,7 @@ homepage for people to checkout gamenight
     - [Tailwind for Sveltekit](https://tailwindcss.com/docs/installation/framework-guides/sveltekit)
     - UnoCSS
 
-## Run Webpage Locally
-
-You only need to have python3 installed. Can be installed via website or homebrew.
-- NOTE: I generally use `port 8000` for my blog site
-
-```
-$ python3 -m http.server 2000
-```
-
-Render `readme` in terminal
+## Render `readme` in terminal
 
 ```
 $ glow README.md

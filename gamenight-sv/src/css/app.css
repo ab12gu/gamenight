@@ -2,13 +2,3 @@
 @import "./base.css";
 /* @import "./components.css"; */
 @import "./media.css";
-
-/* src/app.css */
-body {
-    /* Use UnoCSS theme colors via var(--uno-colorname) if configured */
-    background-color: background-blue-grey; /* or a CSS variable from UnoCSS theme */
-    color: text-purple;
-    h1,h2,h3,h4,h5,h6 {
-        color: header-color;
-    }
-}

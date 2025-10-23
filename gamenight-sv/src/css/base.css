@@ -2,6 +2,19 @@
 /* Resets browser defaults (margins, paddings, font sizes) so styles are consistent across browsers. */
 /* NOTE: later css overrides earlier css */
 
+/*
+Preston Font reccs
+https://fonts.google.com/specimen/Crimson+Text?categoryFilters=Serif:%2FSerif%2F*,%2FSlab%2F*
+https://fonts.google.com/specimen/Rubik?lang=en_Latn&categoryFilters=Sans+Serif:%2FSans%2F*
+
+Bob Recommends
+https://www.fontpair.co/
+
+Material.io
+https://m3.material.io/styles/typography/fonts
+
+*/
+
 :root {
     --header-color: #1a5270;
     --background-color: #bcdeff;

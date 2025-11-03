@@ -1,0 +1,181 @@
+<html>
+<head>
+    <div id="head"></div>
+    <script>
+      fetch("/includes/head.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("head").innerHTML = data;
+        });
+    </script>
+</head>
+
+<body class="container">
+
+    <div id="header"></div>
+    <script>
+      fetch("/includes/header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+
+    <h3> Hosted by Abhay Gupta </h3>
+
+    <div id="navbar"></div>
+    <script>
+        fetch("/includes/navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Highlight the active tab
+            document.getElementById('details').classList.add('active');
+        });
+    </script>
+
+    <div class="content">
+
+        <h2>Announcements</h2>
+
+        <p>
+          See <a href="donations.html">Donations</a> tab for costs and how to donate.
+        </p>
+
+        <h2>Next Event</h2>
+
+        <p>
+            <b>Date:</b> Friday, 6pm -> Late (~2am)
+            <br>
+        </p>
+
+
+        <ul>
+            <li><b>When:</b> Roughly every 2 weeks </li>
+            <li><b>Time:</b> Fri, 10/03, 7pm to ~2am </li>
+            <li><b>Where:</b> Viva Cap Hill, <a href="https://maps.app.goo.gl/dQsyMCwxTMobeT7H7">1111 E Union St</a>  </li>
+            <ul>
+                <li><b>Parking:</b> Free street parking after 8pm </li>
+                <li>Lots of street parking on east side of <a href="https://www.google.com/maps?q=Cal+Anderson+Park">Cal Anderson Park</a></li>
+            </ul>
+        </ul>
+
+        <ul>
+        </ul>
+
+        <li><b>Check out</b> our in-"house" DJ: Teddy V - <a href="https://open.spotify.com/artist/5p6H25w7trQriiaNqSuUZQ?si=hUOiuffRQXWcGCW5pSwygA">Teddy's spotify</a></li>
+        <li><b>Replacement DJ:</b> Simon's <a href="https://on.soundcloud.com/gZl3RfqyjhRkJBM7DC">Soundcloud</a></li>
+
+        <p>
+          <b>HOWEVER!</b>, to be notified for next events, you just need to <b>dm me</b> via one of the contact methods listed "<a href="subscribe.html">subscribe page</a>" w/ ur name and how I met you)
+        </p>
+
+        <h2>Location</h2>
+
+        <br>
+        <div class="map-container">
+            <iframe
+            src="https://www.google.com/maps?q=1111+E+Union+St,+Seattle,+WA+98119&output=embed"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <br>
+
+        <h2>Images</h2>
+        <br>
+
+        <div style="display: flex; justify-content: center;">
+            <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/DLDsLwCzezQ/"
+                data-instgrm-version="14"
+                style="max-width:540px; margin:auto; text-align: center;" >
+                <a href="https://www.instagram.com/p/DLDsLwCzezQ/" target="_blank">View this post on Instagram</a>
+            </blockquote>
+            <script async src="https://www.instagram.com/embed.js"></script>
+        </div>
+
+
+        <h2> Future Prospects </h2>
+
+        <p>
+        If you have an idea or request, feel free to ping me one. Always open to new ideas!
+        </p>
+
+        <p>
+            <ul>
+                <li> Screen Printing Crafts Night </li>
+                <li> Tie Dye/Bleach Clothing </li>
+                <li> Rooftop Location - Scheduled </li>
+                <li> BBQ </li>
+                <li> Live Band/Music </li>
+                <li> Logo change to that one dinosaur with scales sticking out it's spine...</li>
+            </ul>
+        </p>
+
+        <h2>
+            Prior and Future Venues
+        </h2>
+
+        <p>
+            <ul>
+                <li> Local Brewery - Stoup Brewing, Cap Hill </li>
+                <li> My apartment - The Mill @ First Hill </li>
+                <li> John's house - 1111 e Union Rooftop & Lounge - For June 6th</li>
+                <li> Jake's Apartment - Cue Apartments, 1525 Harvard Ave, Seattle, WA</li>
+            </ul>
+        </p>
+<!--
+
+                <b>Food</b>
+
+        <ul>
+
+            <li><b>Feel free to bring any snacks or drinks you'd like to share</b></li>
+            <li>Can I out someone rn? Anyways, I originally had it as vegan but <b>Alex was being a baby </b>and said you cant call a bbq vegan... and then pulled down my pants and gave me a weggie</li>
+            <li>So, guess we will have <b>1 meat grill & 1 vegan grill</b></li>
+            <li>FILL OUT FOOD <a href="https://docs.google.com/spreadsheets/d/10DqRC_vLWpVV7zXWe9Fpa7sal5FumWeaPXRLEEFpPaM/edit?usp=sharing">FORM</a> </li>
+        </ul>
+
+        <b>Games</b>
+
+        <ul>
+            <li> I hav a volleeyball</li>
+            <li> Anyone have others? frisabbee, spike ball, circuis props?</li>
+        </ul>
+
+
+        <b>Transportation</b>
+
+        <ul>
+            <li><b>Parking:</b> Free street parking all day </li>
+            <li><b>Biking:</b> Right on Burk-Gillman Trail so just bike thru </li>
+            <li><b>Public Transport:</b> Bus 8, 10, 11, 43, 49</li>
+        </ul>
+        </p>
+
+        <b>Weather</b>
+
+        <ul>
+            <li> Sprinkles around 4pm but clear by 7pm </li>
+            <li> Sunset around 8-9, so coming on time would be pretty</li>
+            <li> <b>It's about 61F estimated rn, so bring a light jacket</b></li>
+        </ul>
+
+        Food and Drinks || <a href="https://venmo.com/u/abhay-gupta-3">Venmo</a>
+        <ul>
+            <li>Feel free to bring bevs/snacks/friends </li>
+            <li>Vegan/NV/V pizza by slice next door all night </li>
+            <li>I often order pizza, but costs $10 to have some</li>
+            <li>If you drink without bringing, please donate $5 to help restock</li>
+        </ul>
+
+        -->
+
+    </div>
+</body>
+</html>

@@ -1,15 +1,5 @@
-# gamenight
+# README
 
-homepage for people to checkout gamenight
-
-## Run Webpage Locally
-
-You only need to have python3 installed. Can be installed via website or homebrew.
-- NOTE: I generally use `port 8000` for my blog site
-
-```
-$ python3 -m http.server 2000
-```
 ## Styleguides
 
 [CSS Styleguide](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/CSS)
@@ -30,17 +20,11 @@ $ python3 -m http.server 2000
 $ glow README.md
 ```
 
-## Start local server
 
-```
-$ npm run dev # development server
-```
+### SVELTE
 
-## Compile static site
-```
-$ npm run build # build static site (or normal site depends on what u defined in config)
-$ serve build # static-site rendering server, run in root
-```
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+
 
 ## Run Webpage locally via Sveltekit
 
@@ -54,6 +38,7 @@ $ npx sv create my-app
 $ npm install -D unocss
 $ npx add tailwindcss # NOT USED
 ```
+
 
 Install node version manager (`nvm`) to select right version
 
@@ -76,6 +61,7 @@ $ npm run build # build static site (or normal site depends on what u defined in
 $ npm install -g serve # run locally in root
 ```
 
+
 Recommended to use `Svelte for VS Code` but there is a vim library too
 
 NOTE: Unlike python, node version manager has its own environment when running env, with dependencies stored in `package.json` file and stores them in `node_modules`.
@@ -96,8 +82,46 @@ $ npm install -D unocss # alt add unocss
 - Background: #bcdeff
 - Text: #71548a
 
-## Old Colors 
 
-- Test: #947BB1
-- Background: #C7E3FF
-- Headers: #1A5270
+## Creating a project
+
+If you're seeing this, you've probably already done this step. Congrats!
+
+```sh
+# create a new project in the current directory
+$ npx sv create
+
+# create a new project in my-app
+$ npx sv create my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+# start a development server
+$ npm run dev
+
+# flag to open the app in a new browser tab
+$ npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+$ npm run build
+```
+
+## Preview Site
+
+You can preview the production build with either one of these commands:
+```sh
+# Need to rebuild site before running preview,  run in root
+$ npm run preview
+$ serve build -l 1000
+```
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

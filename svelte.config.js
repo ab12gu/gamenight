@@ -14,8 +14,8 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter({
 			// default options are shown
-			pages: 'build', // directory to output built files to
-			assets: 'build', // directory to output built assets to
+			pages: 'docs', // directory to output built files to
+			assets: 'docs', // directory to output built assets to
 			fallback: undefined, // fallback HTML page, if any, for SPA mode; see below
 			precompress: false, // whether to precompress assets to .gz and .br files for serving
 			strict: true // whether to throw an error when a route is not prerendered

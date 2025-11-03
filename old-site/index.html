@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div id="head"></div>
+    <script>
+      fetch("includes/head.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("head").innerHTML = data;
+        });
+    </script>
+</head>
+
+<body class="container">
+
+    <div id="header"></div>
+    <script>
+      fetch("includes/header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+
+    <h3> Hosted by Abhay Gupta </h3>
+
+    <div id="navbar"></div>
+    <script>
+        fetch("includes/navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Highlight the active tab
+            document.getElementById('home').classList.add('active');
+        });
+    </script>
+
+    <div class="content">
+
+
+        <h2> Uhm… "welcome?" </h2>
+
+        <p>
+            Bring your own board games night. Feel free to just socialize if you aren't a heavy gamer. I really don't care much for board games personally.
+        </p>
+
+        <p>
+            <b>Intent:</b> A way for people to make friends and move a little outside their comfort zone.
+        </p>
+
+        <p>
+        <b>Shoot me</b> a text or email to get notified for next event:  (see <a href="pages/subscribe.html">subscribe</a> for  deets)
+            <ul>
+                <li><b>email:</b> <a href="mailto:ab18gu@gmail.com">ab18gu@gmail.com </a></li>
+                <li><b>cell:</b> <a href="sms:+12067695629">206-769-5629 </a></li>
+            </ul>
+        </p>
+
+        <h2> Next Event </h2>
+
+        <p>
+            <b> Indoor Boardgames:: 11/7, 7pm -> 2am</b>
+        </p>
+
+        <ul>
+            <li><b>NO COST !!</b>, but <b>bring BOARDGAMES & DRINKS to share !!</b></li>
+            <li><b>Addie:</b> Viva Cap Hill, <a href="https://maps.app.goo.gl/dQsyMCwxTMobeT7H7">1111 E Union St</a>  </li>
+            <li>See <a href="/pages/details.html">Details</a> for more information.</li>
+            <li><b>Parking:</b> Free street parking after 8pm (park on east side of cal anderson)</li>
+        </ul>
+
+        <p>
+            <div style="display: flex; justify-content: center; margin: 20px 0;">
+                <div id="photo-gallery-2" style="position: relative; max-width: 600px; margin: 0 auto;">
+                    <img id="gallery-image-2" src="./images/locations/john-lounge/inside-alt.jpg" alt="Location Photo" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+                    <button id="prev-btn-2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">‹</button>
+                    <button id="next-btn-2" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">›</button>
+
+                    <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #666;">
+                        <span id="photo-counter-2">1 of 7</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const photos2 = [
+                    './images/locations/john-lounge/inside-alt.jpg',
+                    './images/locations/john-roof/night.jpeg',
+                    './images/locations/john-lounge/inside.jpg',
+                    './images/locations/john-lounge/outside.jpg',
+                    './images/locations/john-roof/day1.jpg',
+                    './images/locations/john-roof/day2.jpg',
+                    './images/locations/john-roof/day3.jpg',
+                ];
+
+                let currentPhotoIndex2 = 0;
+                const galleryImage2 = document.getElementById('gallery-image-2');
+                const prevBtn2 = document.getElementById('prev-btn-2');
+                const nextBtn2 = document.getElementById('next-btn-2');
+                const photoCounter2 = document.getElementById('photo-counter-2');
+
+                function updatePhoto2() {
+                    galleryImage2.src = photos2[currentPhotoIndex2];
+                    photoCounter2.textContent = `${currentPhotoIndex2 + 1} of ${photos2.length}`;
+                }
+
+                function nextPhoto2() {
+                    currentPhotoIndex2 = (currentPhotoIndex2 + 1) % photos2.length;
+                    updatePhoto2();
+                }
+
+                function prevPhoto2() {
+                    currentPhotoIndex2 = (currentPhotoIndex2 - 1 + photos2.length) % photos2.length;
+                    updatePhoto2();
+                }
+
+                prevBtn2.addEventListener('click', prevPhoto2);
+                nextBtn2.addEventListener('click', nextPhoto2);
+
+                // Keyboard navigation for second gallery
+                document.addEventListener('keydown', function(e) {
+                    // Only handle if second gallery is focused (you can add focus detection if needed)
+                    if (e.key === 'ArrowLeft') {
+                        prevPhoto2();
+                    } else if (e.key === 'ArrowRight') {
+                        nextPhoto2();
+                    }
+                });
+            </script>
+        </p>
+
+        <h2> Feedback </h2>
+        <p>
+            If you have any ideas, let me know.
+        </p>
+
+        <p>
+            <ul>
+                <li> Feel free to give me feedback on website or event in general. </li>
+                <li> DM me to <a href="pages/subscribe.html">subscribe</a> or unsubscribe. </li>
+            </ul>
+
+        </p>
+
+        <h2>Images</h2>
+        <br>
+
+
+
+
+
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <video width="600" height="400" autoplay muted loop controls>
+                <source src="./vids/gamenight-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <div id="photo-gallery" style="position: relative; max-width: 600px; margin: 0 auto;">
+                <img id="gallery-image" src="./images/gamenight-250606/teddy-dj.jpg" alt="Game Night Photo" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+                <button id="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">‹</button>
+                <button id="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">›</button>
+
+                <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #666;">
+                    <span id="photo-counter">1 of 8</span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const photos = [
+                './images/gamenight-250606/teddy-dj.jpg',
+                './images/gamenight-250606/chef.jpeg',
+                './images/gamenight-250606/cooler.jpeg',
+                './images/gamenight-250606/daniel.jpeg',
+                './images/gamenight-250606/elliot.jpeg',
+                './images/gamenight-250606/hannah.jpeg',
+                './images/gamenight-250606/katt.jpeg',
+                './images/gamenight-250606/pickles.jpeg'
+            ];
+
+            let currentPhotoIndex = 0;
+            const galleryImage = document.getElementById('gallery-image');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const photoCounter = document.getElementById('photo-counter');
+
+            function updatePhoto() {
+                galleryImage.src = photos[currentPhotoIndex];
+                photoCounter.textContent = `${currentPhotoIndex + 1} of ${photos.length}`;
+            }
+
+            function nextPhoto() {
+                currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+                updatePhoto();
+            }
+
+            function prevPhoto() {
+                currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+                updatePhoto();
+            }
+
+            prevBtn.addEventListener('click', prevPhoto);
+            nextBtn.addEventListener('click', nextPhoto);
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    prevPhoto();
+                } else if (e.key === 'ArrowRight') {
+                    nextPhoto();
+                }
+            });
+        </script>
+
+
+        <h2>
+            Miscellanous Hyperlinks
+        </h2>
+
+
+        <ul>
+            <li> source code: <a href="https://github.com/ab12gu/gamenight">github</a> </li>
+            <li> profile url: <a href="https://abgup.com">abgup.com</a> </li>
+            <li> donation page: <a href="patreon.com/abgup">patreon.com/abgup</a> </li>
+        </ul>
+    </div>
+</body>
+
+</html>

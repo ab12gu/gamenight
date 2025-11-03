@@ -14,3 +14,5 @@
 - gal at qfc that bagged my groceries
 - gal at qfc that is short and doesn’t like me anymore?
 - gal who moved from flowtoys colorado @ flow
+- gal at blick
+- gal at dsa soccer chris

@@ -1,1 +1,0 @@
-:root{--header-color: #1a5270;--background-color: #bcdeff;--text-color: #71548a;--hyperlink-color: #096b6c}@layer base{h2{margin-bottom:.5rem;font-weight:700;color:var(--header-color)}a{color:var(--hyperlink-color)}b{color:var(--header-color)}body{background-color:var(--background-color);color:var(--text-color);font-family:Roboto,sans-serif}}

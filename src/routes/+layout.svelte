@@ -1,5 +1,5 @@
 <script lang="ts">
-	import 'uno.css';
+	/*import 'uno.css';*/
 	import '../css/app.css';
 	import favicon from '$lib/assets/triangle.png';
 

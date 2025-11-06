@@ -1,0 +1,18 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/details": [
+		"src/routes/+layout.js"
+	],
+	"/donations": [
+		"src/routes/+layout.js"
+	],
+	"/rant": [
+		"src/routes/+layout.js"
+	],
+	"/subscribe": [
+		"src/routes/+layout.js"
+	]
+}

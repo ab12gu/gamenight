@@ -12,7 +12,7 @@
 </head>
 
 <body class="container">
-   
+
     <div id="header"></div>
     <script>
       fetch("includes/header.html")
@@ -22,7 +22,7 @@
         });
     </script>
 
-    <h3> Hosted by Abhay Gupta </h3> 
+    <h3> Hosted by Abhay Gupta </h3>
 
     <div id="navbar"></div>
     <script>
@@ -33,7 +33,7 @@
             // Highlight the active tab
             document.getElementById('home').classList.add('active');
         });
-    </script> 
+    </script>
 
     <div class="content">
 
@@ -45,7 +45,7 @@
         </p>
 
         <p>
-            <b>Intent:</b> A way for people to make friends and move a little outside their comfort zone. 
+            <b>Intent:</b> A way for people to make friends and move a little outside their comfort zone.
         </p>
 
         <p>
@@ -60,7 +60,7 @@
 
 
         <p>
-            <b> Friendsgiving!!! :: Tues 11/24, 7pm -> 2am</b>
+            <b> Friendsgiving!!! :: Tues 11/23, 7pm -> 2am</b>
         </p>
 
         <p>
@@ -68,38 +68,36 @@
         </p>
 
         <ul>
-            <li><b>Bring some food to share !!</b> and<b> Bring your friends !</b></li>
-            <li><b>Addie:</b> The Mill @ First Hill, <a href="https://www.google.com/maps?q=The+Mill+at+First+Hill">1000 Spring St.</a>  </li>
+            <li><b>NO COST !!</b>, but <b>bring BOARDGAMES & DRINKS & FRIENDS to share !!</b></li>
+            <li><b>Addie:</b> Viva Cap Hill, <a href="https://www.google.com/maps?q=Viva+Cap+Hill">1111 E Union St</a>  </li>
+
             <ul>
-                <li>the common room in my building:: </li>
-                    <ul>
-                        <li>Tower 1 | 2nd floor</li>
-                    </ul>
-                <li><b>try to get in urself if u can :{")"}</b></li>
+                <li>the common room on first floor
+                <li><b>text/call me</b> so i can open door </li>
             </ul>
-            <li>See <a href="/pages/details.html">Details</a> for more information.</li>
             <li><b>Parking:</b> free street parking after 8pm</li>
             <ul>
-                <li>most spots are south of building</li>
-                <li>10 min walk up from belltown or link station</li>
+                <li>most spots are up on east side of Cal Anderson Park</li>
             </ul>
+            <li><b>Train:</b> 10 min walk south from CapHill link station</li>
         </ul>
 
+        <p>See <a href="/pages/details.html">Details</a> for more information.</p>
         <p>
             <div style="display: flex; justify-content: center; margin: 20px 0;">
                 <div id="photo-gallery-2" style="position: relative; max-width: 600px; margin: 0 auto;">
                     <img id="gallery-image-2" src="./images/locations/themill/lounge.jpg" alt="Location Photo" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    
+
                     <button id="prev-btn-2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">‹</button>
                     <button id="next-btn-2" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">›</button>
-                    
+
                     <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #666;">
                         <span id="photo-counter-2">1 of 4</span>
-                    
+
                     </div>
                 </div>
             </div>
-    
+
             <script>
                 const photos2 = [
                     './images/locations/themill/lounge.jpg',
@@ -107,31 +105,31 @@
                     './images/locations/themill/lounge3.webp',
                     './images/locations/themill/building.webp',
                 ];
-                
+
                 let currentPhotoIndex2 = 0;
                 const galleryImage2 = document.getElementById('gallery-image-2');
                 const prevBtn2 = document.getElementById('prev-btn-2');
                 const nextBtn2 = document.getElementById('next-btn-2');
                 const photoCounter2 = document.getElementById('photo-counter-2');
-                
+
                 function updatePhoto2() {
                     galleryImage2.src = photos2[currentPhotoIndex2];
                     photoCounter2.textContent = `${currentPhotoIndex2 + 1} of ${photos2.length}`;
                 }
-                
+
                 function nextPhoto2() {
                     currentPhotoIndex2 = (currentPhotoIndex2 + 1) % photos2.length;
                     updatePhoto2();
                 }
-                
+
                 function prevPhoto2() {
                     currentPhotoIndex2 = (currentPhotoIndex2 - 1 + photos2.length) % photos2.length;
                     updatePhoto2();
                 }
-                
+
                 prevBtn2.addEventListener('click', prevPhoto2);
                 nextBtn2.addEventListener('click', nextPhoto2);
-                
+
                 // Keyboard navigation for second gallery
                 document.addEventListener('keydown', function(e) {
                     // Only handle if second gallery is focused (you can add focus detection if needed)
@@ -143,13 +141,13 @@
                 });
             </script>
         </p>
- 
+
         <h2> Feedback </h2>
         <p>
             If you have any ideas, let me know.
         </p>
 
-        <p> 
+        <p>
             <ul>
                 <li> Feel free to give me feedback on website or event in general. </li>
                 <li> DM me to <a href="pages/subscribe.html">subscribe</a> or unsubscribe. </li>
@@ -169,53 +167,55 @@
 
         <div style="display: flex; justify-content: center; margin: 20px 0;">
             <div id="photo-gallery" style="position: relative; max-width: 600px; margin: 0 auto;">
-                <img id="gallery-image" src="./images/gamenight-250606/teddy-dj.jpg" alt="Game Night Photo" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                
+                <img id="gallery-image" src="./images/gamenight-24/cat.jpg" alt="Game Night Photo" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
                 <button id="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">‹</button>
                 <button id="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;">›</button>
-                
+
                 <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #666;">
-                    <span id="photo-counter">1 of 8</span>
+                    <span id="photo-counter">1 of 10</span>
                 </div>
             </div>
         </div>
 
         <script>
             const photos = [
+                './images/gamenight-24/cat.jpg',
                 './images/gamenight-250606/teddy-dj.jpg',
-                './images/gamenight-250606/chef.jpeg',
-                './images/gamenight-250606/cooler.jpeg',
-                './images/gamenight-250606/daniel.jpeg',
-                './images/gamenight-250606/elliot.jpeg',
-                './images/gamenight-250606/hannah.jpeg',
-                './images/gamenight-250606/katt.jpeg',
-                './images/gamenight-250606/pickles.jpeg'
+                './images/gamenight-24/puzzle.jpg',
+                './images/gamenight-24/adin.jpg',
+                './images/gamenight-24/dog.jpg',
+                './images/gamenight-24/spencer.jpg',
+                './images/gamenight-24/luke.jpg',
+                './images/gamenight-24/jamin.jpg',
+                './images/gamenight-24/teddy.jpg',
+                './images/gamenight-24/steven.jpg',
             ];
-            
+
             let currentPhotoIndex = 0;
             const galleryImage = document.getElementById('gallery-image');
             const prevBtn = document.getElementById('prev-btn');
             const nextBtn = document.getElementById('next-btn');
             const photoCounter = document.getElementById('photo-counter');
-            
+
             function updatePhoto() {
                 galleryImage.src = photos[currentPhotoIndex];
                 photoCounter.textContent = `${currentPhotoIndex + 1} of ${photos.length}`;
             }
-            
+
             function nextPhoto() {
                 currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
                 updatePhoto();
             }
-            
+
             function prevPhoto() {
                 currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
                 updatePhoto();
             }
-            
+
             prevBtn.addEventListener('click', prevPhoto);
             nextBtn.addEventListener('click', nextPhoto);
-            
+
             // Keyboard navigation
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'ArrowLeft') {
